@@ -41,6 +41,7 @@ class $modify(PLEndLevelLayer, EndLevelLayer) {
         const auto s = CCSprite::createWithSpriteFrameName("GJ_plainBtn_001.png");
         const auto s2 = CCSprite::createWithSpriteFrameName("edit_rightBtn2_001.png");
         s2->setPosition(s->getContentSize() / 2);
+        s2->setScale(1.f/0.75f);
         s->addChild(s2);
         m_fields->m_button = CCMenuItemSpriteExtra::create(
             s,
