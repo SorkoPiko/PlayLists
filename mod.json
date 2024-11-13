@@ -1,14 +1,14 @@
 {
-	"geode": "3.4.0",
+	"geode": "4.0.0-alpha.1",
 	"gd": {
-		"win": "2.206",
-		"android": "2.206",
-		"mac": "2.206",
-		"ios": "2.206"
+		"win": "2.207",
+		"android": "2.207",
+		"mac": "2.207",
+		"ios": "2.207"
 	},
 	"id": "sorkopiko.playlists",
 	"name": "PlayLists",
-	"version": "v1.0.1",
+	"version": "v1.0.2",
 	"developer": "SorkoPiko",
 	"description": "Allows you to play lists like playlists - one after the other",
 	"links": {
