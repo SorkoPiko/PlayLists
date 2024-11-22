@@ -1,5 +1,5 @@
 {
-	"geode": "4.0.0-alpha.1",
+	"geode": "4.0.1",
 	"gd": {
 		"win": "2.2074",
 		"android": "2.2074",
@@ -8,7 +8,7 @@
 	},
 	"id": "sorkopiko.playlists",
 	"name": "PlayLists",
-	"version": "v1.0.2",
+	"version": "v1.0.3",
 	"developer": "SorkoPiko",
 	"description": "Allows you to play lists like playlists - one after the other",
 	"links": {
