@@ -30,6 +30,15 @@ class $modify(PLEndLevelLayer, EndLevelLayer) {
             glm->m_levelDownloadDelegate = &m_fields->m_nextLevelDelegate;
             createButton();
         }
+
+        if (Mod::get()->getSettingValue<bool>("instantSkip")) {
+            auto sequence = CCSequence::create(
+                CCDelayTime::create(1.f), // some time to award e.g. stars/moons
+                CCCallFunc::create(this, callfunc_selector(PLEndLevelLayer::nextLevelWrapper)),
+                nullptr
+            );
+            this->runAction(sequence);
+        }
     }
 
     void createButton() {
@@ -51,6 +60,10 @@ class $modify(PLEndLevelLayer, EndLevelLayer) {
         m_fields->m_button->setID("next"_spr);
         m_fields->m_button->setPosition({180, -125});
         m_mainLayer->getChildByID("button-menu")->addChild(m_fields->m_button);
+    }
+
+    void nextLevelWrapper() {
+        nextLevel(nullptr);
     }
 
     void nextLevel(CCObject* sender) {
