@@ -1,5 +1,5 @@
 {
-	"geode": "4.0.1",
+	"geode": "4.9.0",
 	"gd": {
 		"win": "2.2074",
 		"android": "2.2074",
@@ -8,26 +8,28 @@
 	},
 	"id": "sorkopiko.playlists",
 	"name": "PlayLists",
-	"version": "v1.0.3",
+	"version": "v1.1.0",
 	"developer": "SorkoPiko",
 	"description": "Allows you to play lists like playlists - one after the other",
 	"links": {
 		"source": "https://github.com/SorkoPiko/PlayLists",
 		"community": "https://discord.gg/8uPFxhxBX9"
 	},
-	"dependencies": [
-		{
-			"id": "geode.node-ids",
-			"version": ">=v1.13.2",
-			"importance": "required"
-		}
-	],
+	"dependencies": {
+		"geode.node-ids": ">=v1.13.2"
+	},
 	"settings": {
 		"levelInfo": {
 			"name": "Show Level Info",
 			"description": "Show level info before playing.",
 			"type": "bool",
 			"default": true
+		},
+		"instantSkip": {
+			"name": "Instant Skip",
+			"description": "Instantly skips to the next level in the list without needing to click a button",
+			"type": "bool",
+			"default": false
 		}
 	}
 }
